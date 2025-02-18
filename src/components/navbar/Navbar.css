@@ -1,0 +1,42 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5%;
+    background: rgba(27, 38, 59, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 3px solid #00E6F6;
+}
+
+.header img {
+     width: 70px;
+     height: 70px;
+     object-fit: contain;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #E0E1DD;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #E0E1DD;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
