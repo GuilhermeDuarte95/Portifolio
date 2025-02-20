@@ -76,6 +76,20 @@
     z-index: 3; /* Garante que a frase de impacto esteja acima da imagem */
 }
 
+.button {
+    position: relative; /* Permite manipulação do z-index */
+    margin-left: 20px;
+    z-index: 999; /* Garante que fique acima de outros elementos */
+}
+
+.button-container {
+    position: absolute;
+    bottom: -3%; /* Ajuste conforme necessário */
+    left: 50%; 
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    z-index: 999; /* Mantém o botão acima dos outros elementos */
+}
+
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .hero {
