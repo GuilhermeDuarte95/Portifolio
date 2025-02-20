@@ -16,7 +16,7 @@ const Hero = () => {
         <div className="button-container">
           <Button 
             text={content.heroSection.buttonTextCv}
-            onClick={() => window.location.href = "../../public/curriculo.pdf"} // Caminho para o PDF na pasta public
+            onClick={() => window.location.href = "/curriculo.pdf"} // Caminho para o PDF na pasta public
           />
           <Button 
             text={content.heroSection.buttonTextLinkedin}
