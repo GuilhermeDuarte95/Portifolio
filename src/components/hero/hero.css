@@ -119,4 +119,33 @@
     .catchphrase {
         font-size: 0.9rem; /* Ajuste para telas menores */
     }
+
+    /* Ajustes nos botões */
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Faz os botões ficarem empilhados em telas menores */
+        align-items: center;
+        bottom: -3%; /* Ajuste conforme necessário */
+        left: 50%;
+        transform: translateX(-50%); /* Centraliza horizontalmente */
+        z-index: 999;
+    }
+
+    /* Botões lado a lado para CV e Linkedin, e o Contato abaixo */
+    .button-container button {
+        width: 90%; /* Botões menores em telas pequenas */
+        margin: 10px 0; /* Espaço entre os botões */
+    }
+
+    .button-container button:nth-child(1),
+    .button-container button:nth-child(2) {
+        width: 45%; /* Botões CV e Linkedin ocupando 45% cada */
+        margin: 5px; /* Menor espaçamento entre os dois */
+    }
+
+    /* Ajustes para botões em tela muito pequena */
+    .button-container button:nth-child(3) {
+        width: 90%; /* O botão Contato ocupa toda a largura disponível */
+    }
 }
+
