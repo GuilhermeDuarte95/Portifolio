@@ -223,6 +223,6 @@
 
     .button-container button:nth-child(3) {
         width: 45%; /* O botão Contato ocupa a largura inteira */
-        margin-bottom: 20%;
+        margin-bottom: 40%;
     }
 }

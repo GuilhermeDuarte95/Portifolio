@@ -1,13 +1,102 @@
 .about{
     background-color: #0A0F24;
     margin-top: 10%;
+    padding: 20px 20px 20px 20px;
+    margin-top: 20%;
+    background-image: url('../../assets/imgAbout.png');
+    background-size: contain; /* Ajusta a imagem para caber dentro do container */
+    background-position: bottom right; /* Mantém a imagem no topo centralizada */
+    background-repeat: no-repeat;
 }
 
 /* Título principal */
 .title {
-    font-size: 2.5rem; /* Aproximadamente 40px convertido para rem */
+    font-size: 2.25rem; /* Aproximadamente 36px convertido para rem */
     font-weight: bold; /* Peso da fonte */
-    margin-bottom: 6px;
+    margin-bottom: 30px;
     font-family: "Audiowide", serif;
     margin-left: 80px; /* Maior espaçamento da esquerda */
+}
+
+.description {
+    font-size: 1.20rem;
+    line-height: 1.75rem;
+    color: #778DA9;
+    margin: 0 auto;
+    width: 60%;
+}
+
+.light {
+    color: #E0E1DD;
+}
+
+.description li span.dark {
+    color: #778DA9 !important; /* Cor mais escura para o texto dentro de <span class="dark"> */
+}
+
+
+.description a {
+    color: #00E6F6; /* Cor do link */
+    text-decoration: none;
+    position: relative; /* Necessário para o efeito */
+    display: inline-block; /* Permite que o ::after funcione corretamente */
+}
+
+.description a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* Ajuste a posição da linha */
+    width: 0%;
+    height: 1px; /* Deixe a linha mais fina */
+    background-color: #00E6F6;
+    transition: width 0.3s ease-in-out;
+}
+
+.description a:hover::after {
+    width: 100%;
+}
+
+.description ul {
+    list-style: none; /* Remove os bullets padrões */
+    padding-left: 0;
+}
+
+.description li {
+    position: relative;
+    padding-left: 30px; /* Espaço para o novo bullet */
+    font-size: 1.1rem;
+    color: #E0E1DD; /* Cor do texto */
+}
+
+.description li::before {
+    content: "✔"; /* Altere o símbolo aqui: ▪, ➤, ✔, etc. */
+    color: #00E6F6; /* Cor do bullet */
+    font-size: 1.2rem;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .about {
+        padding: 0 10px;
+        padding-top: 80px; /* Menor padding-top em dispositivos móveis */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Ajuste para telas menores */
+        margin-bottom: 1%;
+        margin-left: 10%;
+    }
+
+    .description {
+        font-size: 1rem; /* Ajuste para telas menores */
+        margin: 0 auto;
+        margin-bottom: 50%;
+        width: 90%;
+    }
+
 }

@@ -6,6 +6,7 @@ const About = () => {
   return (
     <section id="about" className="about">
         <h1 className="title">{content.aboutSection.title}</h1>
+        <p className="description">{content.aboutSection.description}</p>
     </section>
   );
 };
