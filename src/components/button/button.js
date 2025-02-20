@@ -1,9 +1,9 @@
 import React from "react";
-import "./button.css"; // Importa o arquivo CSS
+import "./button.css";
 
-const Button = ({ text, variant = "primary", ...props }) => {
+const Button = ({ text, variant = "primary", size, ...props }) => {
   return (
-    <button className={`button ${variant}`} {...props}>
+    <button className={`button ${variant}`} style={{ fontSize: size }} {...props}>
       {text}
     </button>
   );
