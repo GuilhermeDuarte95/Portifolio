@@ -10,3 +10,16 @@ html, body {
   margin: 0; /* Remover qualquer margem padrão */
   background-color: #0A0F24; /* Cor de fundo */
 }
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0A0F24; /* Cor de fundo durante o carregamento */
+}
+
+.loading-gif {
+  width: 500px; /* Ajuste o tamanho do GIF */
+  height: auto;
+}

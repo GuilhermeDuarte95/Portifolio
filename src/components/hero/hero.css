@@ -61,7 +61,7 @@
     font-size: 2rem; /* Aproximadamente 32px convertido para rem */
     line-height: 2.5rem; /* Altura da linha proporcional */
     max-width: 800px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: #778DA9;
     margin-left: 25%; /* Alinha quase no meio da tela, ajusta o valor conforme necessário */
 }
@@ -70,7 +70,6 @@
 .catchphrase {
     font-size: 1.75rem; /* Aproximadamente 28px convertido para rem */
     font-style: italic;
-    margin-top: 10px;
     margin-right: 40px; /* Espaçamento à direita */
     align-self: flex-end; /* Garante que o texto vai para a direita */
     z-index: 3; /* Garante que a frase de impacto esteja acima da imagem */
@@ -95,6 +94,13 @@
     .hero {
         padding: 0 10px;
         padding-top: 80px; /* Menor padding-top em dispositivos móveis */
+    }
+
+    .hero .bottom-left-img {
+        width: 40vw; /* Aumenta proporcionalmente para telas menores */
+        max-width: 200px; /* Define um tamanho máximo para não ficar muito grande */
+        bottom: 0; /* Ajusta a posição inferior */
+        left: 5%; /* Mantém um pequeno espaço da borda esquerda */
     }
 
     .title {

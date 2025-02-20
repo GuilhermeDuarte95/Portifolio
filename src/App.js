@@ -2,33 +2,43 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar.js';
 import Hero from './components/hero/hero.js';
+import loadingGif from './assets/loading.gif'; // Importa o GIF
 
 function App() {
-  const [isNavbarVisible, setNavbarVisible] = useState(true); // Estado para controlar a visibilidade
+  const [isNavbarVisible, setNavbarVisible] = useState(true);
+  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
 
   useEffect(() => {
     let lastScrollTop = 0;
 
-    // Função para controlar o comportamento da rolagem
+    // Simula um carregamento de 2 segundos
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 3500);
+
+    // Função para esconder/exibir o navbar ao rolar a página
     const handleScroll = () => {
       let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-      
-      if (currentScroll > lastScrollTop) { // Se o usuário rolou para baixo
-        setNavbarVisible(false); // Esconde o navbar
-      } else { // Se o usuário rolou para cima
-        setNavbarVisible(true); // Exibe o navbar
-      }
-      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Previne valores negativos
+      setNavbarVisible(currentScroll < lastScrollTop);
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
     };
 
-    // Adicionar o evento de rolagem
     window.addEventListener('scroll', handleScroll);
 
-    // Remover o evento de rolagem ao desmontar o componente
     return () => {
+      clearTimeout(timer); // Remove o timeout para evitar bugs
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []); // O efeito roda apenas uma vez, no carregamento do componente
+  }, []);
+
+  // Se estiver carregando, exibe o GIF
+  if (isLoading) {
+    return (
+      <div className="loading-container">
+        <img src={loadingGif} alt="Carregando..." className="loading-gif" />
+      </div>
+    );
+  }
 
   return (
     <div className="App">
