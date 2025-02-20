@@ -20,11 +20,11 @@
 /* Imagem na parte inferior esquerda */
 .hero .bottom-left-img {
     position: absolute;
-    bottom: 0; /* Distância da parte inferior, em % para ser responsivo */
-    left: 0.5%; /* Distância da parte esquerda, em % para ser responsivo */
-    width: 25vw; /* Ajuste a largura da imagem proporcional à largura da janela */
+    bottom: -10%; /* Distância da parte inferior, em % para ser responsivo */
+    left: 0; /* Distância da parte esquerda, em % para ser responsivo */
+    width: 27vw; /* Ajuste a largura da imagem proporcional à largura da janela */
     height: auto; /* Mantém a proporção da imagem */
-    max-width: 500px; /* Impõe um tamanho máximo para não ficar muito pequena */
+    max-width: 400px; /* Impõe um tamanho máximo para não ficar muito pequena */
     z-index: 2; /* Garante que a imagem fique acima do fundo */
 }
 
