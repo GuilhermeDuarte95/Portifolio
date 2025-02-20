@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navbar/Navbar.js';
 import Hero from './components/hero/hero.js';
+import About from './components/about/about.js'
 import loadingGif from './assets/loading.gif'; // Importa o GIF
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
     <div className="App">
       <Navbar isVisible={isNavbarVisible} />
       <Hero />
+      <About />
     </div>
   );
 }

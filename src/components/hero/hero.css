@@ -92,6 +92,72 @@
     transform: translateX(-50%);
 }
 
+/* Ajustes para telas médias */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .hero {
+        padding: 0 15px; /* Menor padding para telas médias */
+        padding-top: 100px; /* Ajuste o padding-top */
+    }
+
+    .hero .bottom-left-img {
+        width: 35vw; /* Ajusta a largura da imagem para telas médias */
+        max-width: 250px; /* Ajusta o tamanho máximo da imagem */
+        bottom: 0; /* Ajusta a posição inferior */
+        left: 5%; /* Ajusta a posição horizontal */
+    }
+
+    .initial {
+        margin-left: 15%; /* Ajuste da posição à esquerda */
+        font-size: 1.5rem; /* Ajuste para telas médias */
+    }
+
+    .title {
+        font-size: 2.25rem; /* Ajuste para telas médias */
+        margin-left: 15%; /* Ajuste da posição à esquerda */
+    }
+
+    .subtitle {
+        font-size: 2rem; /* Ajuste para telas médias */
+        margin-left: 15%; /* Ajuste da posição à esquerda */
+    }
+
+    .text {
+        font-size: 1.25rem; /* Ajuste para telas médias */
+        margin-left: 20%; /* Ajuste a posição à esquerda */
+        margin-bottom: 30%; /* Ajuste da margem inferior */
+    }
+
+    .catchphrase {
+        font-size: 1.25rem; /* Ajuste para telas médias */
+        margin-left: 30%; /* Ajuste para telas médias */
+    }
+
+    /* Ajustes nos botões */
+    .button-container {
+        display: flex;
+        flex-direction: row; /* Botões lado a lado em telas médias */
+        align-items: center; /* Alinha os botões */
+        justify-content: center; /* Centraliza os botões */
+        width: 100%;
+    }
+
+    .button-container button {
+        width: auto; /* Mantém o tamanho automático */
+        margin-bottom: 10px; /* Espaçamento entre os botões */
+    }
+
+    .button-container button:nth-child(1),
+    .button-container button:nth-child(2) {
+        width: 45%; /* Botões ocupam 45% cada */
+        margin-bottom: 3%; /* Adiciona espaçamento entre os botões */
+    }
+
+    .button-container button:nth-child(3) {
+        width: 45%; /* O botão Contato ocupa a largura inteira */
+        margin-bottom: 20%;
+    }
+}
+
 /* Ajustes para dispositivos móveis */
 @media (max-width: 768px) {
     .hero {
@@ -160,4 +226,3 @@
         margin-bottom: 20%;
     }
 }
-

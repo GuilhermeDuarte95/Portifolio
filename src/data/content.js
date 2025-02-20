@@ -11,7 +11,7 @@ const content = {
     },
 
     aboutSection: {
-
+        title: 'Sobre mim',
     },
 
     skillsSection: {

@@ -1,0 +1,13 @@
+.about{
+    background-color: #0A0F24;
+    margin-top: 10%;
+}
+
+/* Título principal */
+.title {
+    font-size: 2.5rem; /* Aproximadamente 40px convertido para rem */
+    font-weight: bold; /* Peso da fonte */
+    margin-bottom: 6px;
+    font-family: "Audiowide", serif;
+    margin-left: 80px; /* Maior espaçamento da esquerda */
+}

@@ -9,6 +9,7 @@ html, body {
   height: 100%; /* Garantir que o corpo ocupe toda a altura */
   margin: 0; /* Remover qualquer margem padrão */
   background-color: #0A0F24; /* Cor de fundo */
+  scroll-behavior: smooth;
 }
 
 .loading-container {

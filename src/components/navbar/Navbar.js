@@ -9,7 +9,7 @@ const Navbar = ({ isVisible }) => {
         <img src={Logo} alt="Logo" />
       </a>
       <nav className='navbar'>
-        <a href="/">Sobre mim</a>
+        <a href="#about">Sobre mim</a>
         <a href="/">Habilidades</a>
         <a href="/">Projetos</a>
         <a href="/">Contato</a>
