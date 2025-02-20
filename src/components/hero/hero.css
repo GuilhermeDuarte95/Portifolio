@@ -82,11 +82,14 @@
 }
 
 .button-container {
+    display: flex;
+    justify-content: flex-end; /* Para telas grandes, os botões ficam lado a lado */
+    align-items: center;
+    width: 100%;
     position: absolute;
-    bottom: -3%; /* Ajuste conforme necessário */
-    left: 50%; 
-    transform: translateX(-50%); /* Centraliza horizontalmente */
-    z-index: 999; /* Mantém o botão acima dos outros elementos */
+    bottom: 0%;
+    left: 45%;
+    transform: translateX(-50%);
 }
 
 /* Ajustes para dispositivos móveis */
@@ -122,30 +125,23 @@
 
     /* Ajustes nos botões */
     .button-container {
-        display: flex;
-        flex-direction: column; /* Faz os botões ficarem empilhados em telas menores */
+        flex-direction: column; /* Botões empilhados verticalmente em telas menores */
         align-items: center;
-        bottom: -3%; /* Ajuste conforme necessário */
-        left: 50%;
-        transform: translateX(-50%); /* Centraliza horizontalmente */
-        z-index: 999;
     }
 
-    /* Botões lado a lado para CV e Linkedin, e o Contato abaixo */
     .button-container button {
-        width: 90%; /* Botões menores em telas pequenas */
-        margin: 10px 0; /* Espaço entre os botões */
+        width: 80%; /* Botões menores em telas pequenas */
+        margin-bottom: 10px; /* Espaçamento entre os botões */
     }
 
     .button-container button:nth-child(1),
     .button-container button:nth-child(2) {
-        width: 45%; /* Botões CV e Linkedin ocupando 45% cada */
-        margin: 5px; /* Menor espaçamento entre os dois */
+        width: 45%; /* Botões CV e Linkedin ficam lado a lado, ocupando 45% cada */
+        margin-bottom: 10px; /* Adiciona espaçamento entre os botões */
     }
 
-    /* Ajustes para botões em tela muito pequena */
     .button-container button:nth-child(3) {
-        width: 90%; /* O botão Contato ocupa toda a largura disponível */
+        width: 90%; /* O botão Contato ocupa a largura inteira */
     }
 }
 

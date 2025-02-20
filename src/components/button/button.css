@@ -3,7 +3,9 @@
     font-family: "Teko", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
-    padding: 10px 24px;
+    padding: 10px 24px; /* Pode ajustar o padding se necessário */
+    width: auto; /* A largura agora será definida automaticamente com base no conteúdo */
+    min-width: 150px; /* Define uma largura mínima para o botão para que ele não fique muito pequeno */
     border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease;
