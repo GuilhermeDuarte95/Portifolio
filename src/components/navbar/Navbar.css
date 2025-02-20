@@ -1,32 +1,33 @@
 .header {
-    position: fixed;
+    position: fixed;  /* Para garantir que o navbar fique fixo no topo */
     top: 0;
     left: 0;
     width: 100%;
     padding: 10px 5%;
-    background: rgba(27, 38, 59, 0.9);
+    background: rgba(27, 38, 59, 0.9); /* Ajuste de opacidade */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 10; /* Isso garante que o navbar ficará acima do conteúdo da hero */
     border-bottom: 3px solid #00E6F6;
-}
-
-.header img {
-     width: 70px;
-     height: 70px;
-     object-fit: contain;
-}
-
-.navbar a {
+    transition: opacity 0.3s ease; /* Para a transição suave de opacidade */
+  }
+  
+  .header img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+  
+  .navbar a {
     position: relative;
     font-size: 20px;
     color: #E0E1DD;
     margin-left: 40px;
     text-decoration: none;
-}
-
-.navbar a::before {
+  }
+  
+  .navbar a::before {
     content: '';
     position: absolute;
     top: 100%;
@@ -35,8 +36,16 @@
     height: 2px;
     background: #E0E1DD;
     transition: .3s;
-}
-
-.navbar a:hover::before {
+  }
+  
+  .navbar a:hover::before {
     width: 100%;
-}
+  }
+  
+  /* Classe para esconder o navbar */
+  .hidden-navbar {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Impede interações com o navbar quando invisível */
+  }
+  

@@ -1,11 +1,102 @@
+/* Hero Section */
 .hero {
-    height: 100vh;
+    height: calc(100vh - 100px); /* Ajusta a altura para o navbar fixo */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start; /* Alterado para "flex-start" para o conteúdo começar no topo */
+    align-items: flex-start;
     background-color: #0A0F24;
-    color: white;
-    text-align: center;
-  }
-  
+    padding: 0 20px 0 20px; /* Removido o padding no topo */
+    padding-top: 120px; /* Espaço para o navbar */
+    margin-top: 36px; /* Remove o espaço extra do navbar */
+    background-image: url('../../assets/imgHero.png');
+    background-size: contain; /* Ajusta a imagem para caber dentro do container */
+    background-position: top center; /* Mantém a imagem no topo centralizada */
+    background-repeat: no-repeat;
+    z-index: 1; /* Garante que o conteúdo da hero fique atrás do navbar */
+    position: relative; /* Permite a posição do conteúdo absoluto dentro */
+}
+
+/* Imagem na parte inferior esquerda */
+.hero .bottom-left-img {
+    position: absolute;
+    bottom: 0; /* Distância da parte inferior, em % para ser responsivo */
+    left: 0.5%; /* Distância da parte esquerda, em % para ser responsivo */
+    width: 25vw; /* Ajuste a largura da imagem proporcional à largura da janela */
+    height: auto; /* Mantém a proporção da imagem */
+    max-width: 500px; /* Impõe um tamanho máximo para não ficar muito pequena */
+    z-index: 2; /* Garante que a imagem fique acima do fundo */
+}
+
+/* Estilo do texto inicial */
+.initial {
+    font-size: 2rem; /* Aproximadamente 32px convertido para rem */
+    letter-spacing: 0.1rem; /* Ajuste espaçamento entre as letras */
+    color: #00E6F6; /* Cor do texto */
+    margin-bottom: 6px;
+    margin-left: 80px; /* Maior espaçamento da esquerda */
+}
+
+/* Título principal */
+.title {
+    font-size: 2.5rem; /* Aproximadamente 40px convertido para rem */
+    font-weight: bold; /* Peso da fonte */
+    margin-bottom: 6px;
+    font-family: "Audiowide", serif;
+    margin-left: 80px; /* Maior espaçamento da esquerda */
+}
+
+/* Subtítulo */
+.subtitle {
+    font-size: 2.25rem; /* Aproximadamente 36px convertido para rem */
+    font-weight: bold;
+    color: #778DA9;
+    margin-bottom: 50px;
+    font-family: "Audiowide", serif;
+    margin-left: 80px; /* Maior espaçamento da esquerda */
+}
+
+/* Texto principal com quebra de linha */
+.text {
+    font-size: 2rem; /* Aproximadamente 32px convertido para rem */
+    line-height: 2.5rem; /* Altura da linha proporcional */
+    max-width: 800px;
+    margin-bottom: 50px;
+    color: #778DA9;
+    margin-left: 25%; /* Alinha quase no meio da tela, ajusta o valor conforme necessário */
+}
+
+/* Frase de impacto (catchphrase) */
+.catchphrase {
+    font-size: 1.75rem; /* Aproximadamente 28px convertido para rem */
+    font-style: italic;
+    margin-top: 10px;
+    margin-right: 40px; /* Espaçamento à direita */
+    align-self: flex-end; /* Garante que o texto vai para a direita */
+    z-index: 3; /* Garante que a frase de impacto esteja acima da imagem */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 10px;
+        padding-top: 80px; /* Menor padding-top em dispositivos móveis */
+    }
+
+    .title {
+        font-size: 2rem; /* Ajuste para telas menores */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Ajuste para telas menores */
+    }
+
+    .text {
+        font-size: 1rem; /* Ajuste para telas menores */
+        margin-left: 10%; /* Ajuste para dispositivos menores */
+    }
+
+    .catchphrase {
+        font-size: 0.9rem; /* Ajuste para telas menores */
+    }
+}
