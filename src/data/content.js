@@ -51,83 +51,111 @@ const content = {
             {
                 id: 1,
                 category: 'real',
-                tipo: 'logistica',
+                followup: 'logistica',
+                projecttype: 'Melhoria',
                 summary: 'Otimização da transferência de cargas entre filiais (turno noturno)',
                 description: 'Resolvi problemas críticos de comunicação entre administrativo e pátio, melhorando o fluxo de informações e a produtividade',
                 duration: '6 meses',
                 year: 2021,
+                showGithub: true,      // Exibe o ícone do GitHub
+                showModal: true,      // Exibe o ícone do Modal
             },
             {
                 id: 2,
                 category: 'real',
-                tipo: 'logistica',
+                followup: 'logistica',
+                projecttype: 'Melhoria',
                 summary: 'Implantação da Central de Frota',
                 description: 'Centralização da estratégia de aproveitamento de viagens em um único ponto focal na matriz',
                 duration: '8 meses',
                 year: 2022,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 3,
                 category: 'real',
-                tipo: 'logistica',
+                followup: 'logistica',
+                projecttype: 'Implantação',
                 summary: 'Expansão para uma nova filial (transporte marítimo)',
                 description: 'Utilizei minha expertise para estruturar um atendimento ao cliente eficiente e garantir a excelência operacional',
                 duration: '10 meses',
                 year: 2023,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 4,
                 category: 'real',
-                tipo: 'customer service',
+                followup: 'customer service',
+                projecttype: 'Implantação',
                 summary: 'Implantação do setor de Customer Service',
                 description: 'Estruturando o atendimento ao cliente para melhorar a experiência do usuário e a eficiência nas interações',
                 duration: '8 meses',
                 year: 2023,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 5,
                 category: 'real',
-                tipo: 'tecnologia',
+                followup: 'tecnologia',
+                projecttype: 'Melhoria',
                 summary: 'Integração das filas de atendimento com a equipe de TI via Jira',
                 description: 'Facilitando a comunicação entre suporte e desenvolvimento para acelerar a resolução de demandas técnicas',
                 duration: '11 meses',
                 year: 2024,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 6,
                 category: 'real',
-                tipo: 'tecnologia',
+                followup: 'tecnologia',
+                projecttype: 'Evolução de produto',
                 summary: 'Desenvolvimento contínuo do sistema web e mobile',
                 description: 'Acompanhando e otimizando novas funcionalidades para aprimorar a plataforma da SUMA Connect',
                 duration: '11 meses',
                 year: 2024,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 7,
                 category: 'acadêmico',
-                tipo: 'tecnologia',
+                followup: 'tecnologia',
+                projecttype: 'Desenvolvimento de software',
                 summary: 'Front-end web de um ecommerce de hortifruti',
                 description: 'Esta foi minha primeira experiencia de construir um projeto apenas de front-end utilizando HTML, CSS e JavaScript puro',
                 duration: '4 meses',
                 year: 2023,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 8,
                 category: 'acadêmico',
-                tipo: 'tecnologia',
+                followup: 'tecnologia',
+                summary: 'Análise de dados',
+                description: 'Um dos meus primeiros Dashboards utilizando os dados disponibilizados pela Microsoft para efeitos academicos',
                 summary: 'Dashboard de Vendas com Power BI',
                 description: 'Um dos meus primeiros Dashboards utilizando os dados disponibilizados pela Microsoft para efeitos academicos',
                 duration: '1 mês',
                 year: 2023,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 9,
                 category: 'acadêmico',
-                tipo: 'tecnologia',
+                followup: 'tecnologia',
+                projecttype: 'Desenvolvimento de software',
                 summary: 'Front-end mobile de gestão de gastos para motoristas de aplicativo - Na faixa',
                 description: 'Atuei principalmente no planejamento do projeto, utilizando boas práticas de engenharia de software e gestão de projetos. Na execução fui responsavel em criar o front-end mobile com React Native, testar os endpoints da API nos Postman e construir a integração adequado com o backend',
                 duration: '11 meses',
                 year: 2024,
+                showGithub: false,      // Não exibe o ícone do GitHub
+                showModal: false,      // Não exibe o ícone do Modal
             },
         ]
     },
