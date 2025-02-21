@@ -1,0 +1,74 @@
+.skills{
+    background-color: #0A0F24;
+    padding: 20px 20px 40px 0px;
+    margin-top: 20%;
+    background-image: url('../../assets/imgSkillsSection.png');
+    background-size: 30% auto; /* Aumenta a largura da imagem */
+    background-position: 80% 90%; /* Mantém a imagem no topo centralizada */
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Garantir que ocupe pelo menos a altura da tela */
+    display: flex; /* Torna o container flexível */
+    flex-direction: column; /* Organiza as seções na vertical */
+    justify-content: flex-start; /* Alinha os itens no topo */
+}
+
+/* Título principal */
+.title {
+    font-size: 2.25rem; /* Aproximadamente 36px convertido para rem */
+    font-weight: bold; /* Peso da fonte */
+    font-family: "Audiowide", serif;
+    margin-left: 80px; /* Maior espaçamento da esquerda */
+}
+
+/* Container das skills */
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha */
+    gap: 15px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens */
+    width: 80%; /* Ajusta a largura do container */
+    margin-left: auto;
+    margin-right: auto; /* Garante centralização do conteúdo */
+}
+
+/* Itens de skill */
+.skill-item {
+    background-color: #0D1B2A; /* Cor do retângulo */
+    color: #E0E1DD; /* Cor do texto */
+    font-size: 1.4rem;
+    padding: 12px 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    border: 2px solid #778DA9; /* Borda com leve contraste */
+    text-align: center;
+    min-width: 250px; /* Largura mínima */
+    width: 80%; /* Tira a largura fixa, ocupando 100% disponível */
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .skills {
+        padding: 0 10px;
+        padding-top: 80px; /* Menor padding-top em dispositivos móveis */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Ajuste para telas menores */
+        margin-bottom: 10%;
+        margin-left: 10%; /* Ajuste para telas menores */
+    }
+
+    .skills-container {
+        width: 100%; /* Ajusta a largura para 100% */
+        margin-left: 0;
+        margin-right: 0; /* Remover margens extras para evitar o scroll horizontal */
+        padding-left: 10px;
+    }
+
+    .skills-item {
+        font-size: 1rem; /* Ajuste para telas menores */
+        width: 90%; /* Ajuste a largura para 90% */
+        margin: 0 auto; /* Centraliza os itens */
+        margin-bottom: 20px; /* Ajuste o espaçamento */
+    }
+}

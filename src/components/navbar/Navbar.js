@@ -10,7 +10,7 @@ const Navbar = ({ isVisible }) => {
       </a>
       <nav className='navbar'>
         <a href="#about">Sobre mim</a>
-        <a href="/">Habilidades</a>
+        <a href="#skills">Habilidades</a>
         <a href="/">Projetos</a>
         <a href="/">Contato</a>
       </nav>

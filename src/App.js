@@ -4,6 +4,7 @@ import Navbar from './components/navbar/Navbar.js';
 import Hero from './components/hero/hero.js';
 import About from './components/about/about.js'
 import loadingGif from './assets/loading.gif'; // Importa o GIF
+import SkillsSection from './components/skillsSection/skillsSection.js';
 
 function App() {
   const [isNavbarVisible, setNavbarVisible] = useState(true);
@@ -46,6 +47,7 @@ function App() {
       <Navbar isVisible={isNavbarVisible} />
       <Hero />
       <About />
+      <SkillsSection />
     </div>
   );
 }

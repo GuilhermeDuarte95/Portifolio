@@ -34,7 +34,13 @@ const content = {
     },
 
     skillsSection: {
-
+        title: 'Habiidades',
+        skills: [
+            'Gestão de Projetos (Scrum, Kanban, PMBOK)',
+            'Customer Service & Experiência do Usuário',
+            'Data Analysis & Insights Estratégicos',
+            'Inovação & Eficiência em Supply Chain',
+        ],
     },
 
     projectsSection: {
