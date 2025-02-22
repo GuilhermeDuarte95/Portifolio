@@ -22,7 +22,7 @@
     position: absolute;
     bottom: -10%; /* Distância da parte inferior, em % para ser responsivo */
     left: 0; /* Distância da parte esquerda, em % para ser responsivo */
-    width: 27vw; /* Ajuste a largura da imagem proporcional à largura da janela */
+    width: 24vw; /* Ajuste a largura da imagem proporcional à largura da janela */
     height: auto; /* Mantém a proporção da imagem */
     max-width: 400px; /* Impõe um tamanho máximo para não ficar muito pequena */
     z-index: 2; /* Garante que a imagem fique acima do fundo */
@@ -185,14 +185,16 @@
 
     .subtitle {
         font-size: 1.5rem; /* Ajuste para telas menores */
-        margin-bottom: 1%;
         margin-left: 10%;
     }
 
     .text {
         font-size: 1rem; /* Ajuste para telas menores */
+        line-height: 1.5rem; /* Diminui o espaçamento entre as linhas */
         margin-left: 10%; /* Ajuste para dispositivos menores */
-        margin-bottom: 50%;
+        margin-bottom: 65%;
+        margin-top: 5%;
+        width: 80vw;
     }
 
     .catchphrase {
@@ -210,7 +212,7 @@
         padding-right: 20px;
         gap: 0.1rem; /* Espacemento uniforme entre os botões */
         position: absolute;
-        bottom: 4rem; /* Ajuste da posição para evitar que fiquem no final da tela */
+        bottom: 6rem; /* Ajuste da posição para evitar que fiquem no final da tela */
     }
 
     .button-container button {
