@@ -45,3 +45,39 @@
     width: 80px;
     margin-top: -40px; /* Move a imagem para cima */
 }
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+    .projects {
+        padding: 0 10px;
+        padding-top: 80px; /* Menor padding-top em dispositivos móveis */
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+        gap: 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 3.125rem;
+        text-align: center;
+        justify-content: center;
+        padding: 0 5rem;  /* Adiciona padding nas laterais direita e esquerda */
+    }
+
+    .title {
+        font-size: 2rem; /* Ajuste para telas menores */
+        margin-bottom: 1%;
+        margin-left: 10%;
+    }
+
+    .subtitle {
+        font-size: 1.3rem; /* Ajuste para telas menores */
+        margin-bottom: 1%;
+        margin-left: 10%;
+    }
+
+    .imagem {
+        width: 3rem;
+        margin-top: -0.5rem; /* Move a imagem para cima */
+    }
+}
