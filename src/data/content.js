@@ -57,8 +57,6 @@ const content = {
                 description: 'Resolvi problemas críticos de comunicação entre administrativo e pátio, melhorando o fluxo de informações e a produtividade',
                 duration: '6 meses',
                 year: 2021,
-                showGithub: true,      // Exibe o ícone do GitHub
-                showModal: true,      // Exibe o ícone do Modal
             },
             {
                 id: 2,
@@ -69,8 +67,6 @@ const content = {
                 description: 'Centralização da estratégia de aproveitamento de viagens em um único ponto focal na matriz',
                 duration: '8 meses',
                 year: 2022,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 3,
@@ -81,8 +77,6 @@ const content = {
                 description: 'Utilizei minha expertise para estruturar um atendimento ao cliente eficiente e garantir a excelência operacional',
                 duration: '10 meses',
                 year: 2023,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 4,
@@ -93,8 +87,6 @@ const content = {
                 description: 'Estruturando o atendimento ao cliente para melhorar a experiência do usuário e a eficiência nas interações',
                 duration: '8 meses',
                 year: 2023,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 5,
@@ -105,8 +97,6 @@ const content = {
                 description: 'Facilitando a comunicação entre suporte e desenvolvimento para acelerar a resolução de demandas técnicas',
                 duration: '11 meses',
                 year: 2024,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 6,
@@ -117,8 +107,6 @@ const content = {
                 description: 'Acompanhando e otimizando novas funcionalidades para aprimorar a plataforma da SUMA Connect',
                 duration: '11 meses',
                 year: 2024,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 7,
@@ -129,8 +117,8 @@ const content = {
                 description: 'Esta foi minha primeira experiencia de construir um projeto apenas de front-end utilizando HTML, CSS e JavaScript puro',
                 duration: '4 meses',
                 year: 2023,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
+                githubUrl: 'https://github.com/GuilhermeDuarte95/E-commerce---Hortifruti.git',// Link dinâmico do GitHub
+                modalUrl:'https://guilhermeduarte95.github.io/E-commerce---Hortifruti/', // Link dinâmico do Modal
             },
             {
                 id: 8,
@@ -142,8 +130,6 @@ const content = {
                 description: 'Um dos meus primeiros Dashboards utilizando os dados disponibilizados pela Microsoft para efeitos academicos',
                 duration: '1 mês',
                 year: 2023,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
             {
                 id: 9,
@@ -154,14 +140,18 @@ const content = {
                 description: 'Atuei principalmente no planejamento do projeto, utilizando boas práticas de engenharia de software e gestão de projetos. Na execução fui responsavel em criar o front-end mobile com React Native, testar os endpoints da API nos Postman e construir a integração adequado com o backend',
                 duration: '11 meses',
                 year: 2024,
-                showGithub: false,      // Não exibe o ícone do GitHub
-                showModal: false,      // Não exibe o ícone do Modal
             },
         ]
     },
 
     contactSection: {
-
+        title: 'Contato',
+        description: (
+            <>
+                🚀 <span className="light">Curtiu meu trabalho?</span> Vamos transformar desafios em oportunidades. Me mande uma mensagem e vamos acelerar o seu próximo projeto!
+            </>
+        ),
+        buttonTextContato: 'Entre em contato',
     },
 
 };

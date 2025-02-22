@@ -9,11 +9,11 @@ const ProjectCard = ({ project }) => {
   const getFollowupIcon = (followup) => {
     switch (followup) {
       case "logistica":
-        return <FaTruck size={30}/>;
+        return <FaTruck size={30} />;
       case "customer service":
-        return <RiCustomerServiceFill size={30}/>;
+        return <RiCustomerServiceFill size={30} />;
       case "tecnologia":
-        return <GrPersonalComputer size={30}/>;
+        return <GrPersonalComputer size={30} />;
       default:
         return null; // Caso o followup não seja reconhecido, não mostra nenhum ícone
     }
@@ -28,13 +28,13 @@ const ProjectCard = ({ project }) => {
 
       {/* Ícones de link superior direito */}
       <div className="top-right-icon">
-        {project.showGithub && (
-          <a href="#" target="_blank" rel="noopener noreferrer">
+        {project.githubUrl && (
+          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
         )}
-        {project.showModal && (
-          <a href="#" target="_blank" rel="noopener noreferrer">
+        {project.modalUrl && (
+          <a href={project.modalUrl} target="_blank" rel="noopener noreferrer">
             <FaExternalLinkAlt />
           </a>
         )}

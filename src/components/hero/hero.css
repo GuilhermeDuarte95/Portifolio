@@ -204,25 +204,28 @@
     .button-container {
         display: flex;
         flex-direction: column; /* Mantém os botões empilhados */
-        align-items: flex-end; /* Alinha os botões à direita */
-        justify-content: flex-end;
+        align-items: center; /* Centraliza os botões */
+        justify-content: flex-start; /* Garante que os botões comecem do topo */
         width: 100%;
-        padding-right: 20px; /* Adiciona um espaçamento da borda direita */
+        padding-right: 20px;
+        gap: 0.1rem; /* Espacemento uniforme entre os botões */
+        position: absolute;
+        bottom: 4rem; /* Ajuste da posição para evitar que fiquem no final da tela */
     }
 
     .button-container button {
-        width: auto; /* Mantém o tamanho automático */
-        margin-bottom: 10px; /* Espaçamento entre os botões */
+        width: 100%; /* Faz os botões ocuparem toda a largura disponível */
+        margin: 0; /* Remove margens desnecessárias */
     }
 
     .button-container button:nth-child(1),
     .button-container button:nth-child(2) {
-        width: 45%; /* Botões CV e Linkedin ficam lado a lado, ocupando 45% cada */
-        margin-bottom: 3%; /* Adiciona espaçamento entre os botões */
+        width: 45%; /* Botões ocupando 100% da largura */
+        margin-bottom: 10px; /* Ajuste para espaçamento entre os botões */
     }
 
     .button-container button:nth-child(3) {
-        width: 45%; /* O botão Contato ocupa a largura inteira */
-        margin-bottom: 24%;
+        width: 45%; /* Botão Contato também ocupa 100% */
+        margin-bottom: 10px; /* Espaço entre os botões */
     }
 }
