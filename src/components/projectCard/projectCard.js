@@ -1,5 +1,5 @@
 import React from "react";
-import { FaExternalLinkAlt, FaGithub, FaTruck } from "react-icons/fa"; 
+import { FaExternalLinkAlt, FaGithub, FaTruck, FaYoutube, FaLinkedin } from "react-icons/fa"; 
 import { RiCustomerServiceFill } from "react-icons/ri";
 import { GrPersonalComputer } from "react-icons/gr";
 import "./projectCard.css";
@@ -28,6 +28,16 @@ const ProjectCard = ({ project }) => {
 
       {/* Ícones de link superior direito */}
       <div className="top-right-icon">
+        {project.linkedinUrl && (
+          <a href={project.linkedinUrl} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+        )}
+        {project.youTubeUrl && (
+          <a href={project.youTubeUrl} target="_blank" rel="noopener noreferrer">
+            <FaYoutube />
+          </a>
+        )}
         {project.githubUrl && (
           <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
             <FaGithub />

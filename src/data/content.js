@@ -117,6 +117,7 @@ const content = {
                 description: 'Esta foi minha primeira experiencia de construir um projeto apenas de front-end utilizando HTML, CSS e JavaScript puro',
                 duration: '4 meses',
                 year: 2023,
+                linkedinUrl:'https://www.linkedin.com/posts/guilherme-duarte-5ab2b9201_frontend-inicianteemprogramacao-desenvolvimentodesistemas-activity-7143933236530917377-wNs1?utm_source=share&utm_medium=member_desktop&rcm=ACoAADN64xMBT1R0Gpwluiml8SMxkSFDLo-Vx60',
                 githubUrl: 'https://github.com/GuilhermeDuarte95/E-commerce---Hortifruti.git',// Link dinâmico do GitHub
                 modalUrl:'https://guilhermeduarte95.github.io/E-commerce---Hortifruti/', // Link dinâmico do Modal
             },
@@ -130,6 +131,8 @@ const content = {
                 description: 'Um dos meus primeiros Dashboards utilizando os dados disponibilizados pela Microsoft para efeitos academicos',
                 duration: '1 mês',
                 year: 2023,
+                linkedinUrl:'https://www.linkedin.com/posts/guilherme-duarte-5ab2b9201_dados-powerbi-dashboard-activity-7141728666916470784-hD5H?utm_source=share&utm_medium=member_desktop&rcm=ACoAADN64xMBT1R0Gpwluiml8SMxkSFDLo-Vx60',
+                youTubeUrl: 'https://youtu.be/YuVsT3oD7HA',
             },
             {
                 id: 9,
@@ -140,6 +143,8 @@ const content = {
                 description: 'Atuei principalmente no planejamento do projeto, utilizando boas práticas de engenharia de software e gestão de projetos. Na execução fui responsavel em criar o front-end mobile com React Native, testar os endpoints da API nos Postman e construir a integração adequado com o backend',
                 duration: '11 meses',
                 year: 2024,
+                linkedinUrl:'https://www.linkedin.com/posts/guilherme-duarte-5ab2b9201_desenvolvimentodesistemas-desenvolvedormobile-activity-7279117167030095872-z5kQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADN64xMBT1R0Gpwluiml8SMxkSFDLo-Vx60',
+                youTubeUrl: 'https://youtu.be/OLt5ZF7gOPc?si=QEwfLXTF8C1_10fh',
             },
         ]
     },
