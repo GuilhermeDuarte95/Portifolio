@@ -61,7 +61,7 @@
     font-size: 2rem; /* Aproximadamente 32px convertido para rem */
     line-height: 2.5rem; /* Altura da linha proporcional */
     max-width: 800px;
-    margin-bottom: 40px;
+    margin-bottom: 7.5rem;
     color: #778DA9;
     margin-left: 25%; /* Alinha quase no meio da tela, ajusta o valor conforme necessário */
 }
@@ -87,7 +87,7 @@
     align-items: center;
     width: 100%;
     position: absolute;
-    bottom: 0%;
+    bottom: 10%;
     left: 45%;
     transform: translateX(-50%);
 }

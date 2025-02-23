@@ -7,6 +7,7 @@ import loadingGif from './assets/loading.gif'; // Importa o GIF
 import SkillsSection from './components/skillsSection/skillsSection.js';
 import Projects from './components/projectsSection/projectsSection.js';
 import Contact from './components/contact/contact.js';
+import Footer from './components/footer/footer.js';
 
 function App() {
   const [isNavbarVisible, setNavbarVisible] = useState(true);
@@ -52,6 +53,7 @@ function App() {
       <SkillsSection />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.footer {
+    background-color: #1B263B;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: row; /* Alinha os itens na horizontal */
+    justify-content: space-between; /* Separa os textos e os ícones */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+}
+
+.textFooter {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #E0E1DD;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 2rem; /* Adiciona espaço à esquerda */
+}
+
+.socialNetwork {
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 2rem; /* Adiciona espaço à direita */
+}
+
+/* Responsividade para telas menores (até 768px) */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Muda para coluna */
+        align-items: center; /* Centraliza os itens */
+        text-align: center;
+    }
+
+    .textFooter {
+        text-align: center; /* Centraliza o texto */
+        margin-left: 0; /* Remove margem lateral */
+        margin-bottom: 10px; /* Adiciona um espaçamento entre os textos e os ícones */
+    }
+
+    .socialNetwork {
+        margin-right: 0; /* Remove margem lateral */
+    }
+}

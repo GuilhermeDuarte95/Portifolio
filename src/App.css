@@ -1,8 +1,7 @@
 .App {
-  background-color: #0A0F24;
-  align-items: flex-start;
+  display: flex;
   flex-direction: column;
-  height: 100%; /* Garantir que a área da aplicação ocupe 100% da altura */
+  min-height: 100vh; /* Garante que a App ocupe toda a tela */
 }
 
 html, body {
@@ -10,6 +9,9 @@ html, body {
   margin: 0; /* Remover qualquer margem padrão */
   background-color: #0A0F24; /* Cor de fundo */
   scroll-behavior: smooth;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .loading-container {
@@ -23,4 +25,14 @@ html, body {
 .loading-gif {
   width: 500px; /* Ajuste o tamanho do GIF */
   height: auto;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Faz com que a página ocupe pelo menos a altura da tela */
+}
+
+.footer {
+  margin-top: auto; /* Empurra o footer para o final */
 }

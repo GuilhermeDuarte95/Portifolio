@@ -104,7 +104,7 @@ const content = {
                 followup: 'tecnologia',
                 projecttype: 'Evolução de produto',
                 summary: 'Desenvolvimento contínuo do sistema web e mobile',
-                description: 'Acompanhando e otimizando novas funcionalidades para aprimorar a plataforma da SUMA Connect',
+                description: 'Acompanhando e otimizando novas funcionalidades para aprimorar a plataforma',
                 duration: '11 meses',
                 year: 2024,
             },
@@ -140,7 +140,7 @@ const content = {
                 followup: 'tecnologia',
                 projecttype: 'Desenvolvimento de software',
                 summary: 'Front-end mobile de gestão de gastos para motoristas de aplicativo - Na faixa',
-                description: 'Atuei principalmente no planejamento do projeto, utilizando boas práticas de engenharia de software e gestão de projetos. Na execução fui responsavel em criar o front-end mobile com React Native, testar os endpoints da API nos Postman e construir a integração adequado com o backend',
+                description: 'Atuei principalmente no planejamento do projeto, utilizando boas práticas de engenharia de software e gestão de projetos. Na execução fui responsavel em criar o front-end mobile com React Native, testar os endpoints da API no Postman e construir a integração adequada com o backend',
                 duration: '11 meses',
                 year: 2024,
                 linkedinUrl:'https://www.linkedin.com/posts/guilherme-duarte-5ab2b9201_desenvolvimentodesistemas-desenvolvedormobile-activity-7279117167030095872-z5kQ?utm_source=share&utm_medium=member_desktop&rcm=ACoAADN64xMBT1R0Gpwluiml8SMxkSFDLo-Vx60',
@@ -157,6 +157,11 @@ const content = {
             </>
         ),
         buttonTextContato: 'Entre em contato',
+    },
+
+    footer: {
+        textRights: '© Todos os direito reservados',
+        textDesigned: 'Projetado e construído por Guilherme Duarte',
     },
 
 };
